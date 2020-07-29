@@ -24,7 +24,7 @@ set -e
 BASE_DIR=/etc/spinnaker
 PROJECT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )/../../" >/dev/null 2>&1 && pwd )
 
-curl -L https://github.com/coreos/prometheus-operator/archive/v0.37.0.tar.gz -o /tmp/prometheus-operator.tgz
+curl -L https://github.com/coreos/prometheus-operator/archive/v0.40.0.tar.gz -o /tmp/prometheus-operator.tgz
 tar -xzvf /tmp/prometheus-operator.tgz -C ${BASE_DIR}/
 
 mv ${BASE_DIR}/prometheus-operator-* ${BASE_DIR}/prometheus
